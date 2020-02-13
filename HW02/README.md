@@ -81,7 +81,11 @@ Method `task_2` should return:
 - For this example, the output will be: `(2018-04-23 17:18:38.8 - 2018-04-23 17:17:49.7) = (38.8 + 10.3) = "49.1"` <- only this number is a string
 - If there are no valid events at the entrance or it is the only one to return "0"``
 
-#### 4. An arbitrary string is given, in which there are letters, numbers, horses, elks ...
+#### 4. An arbitrary string is given, the method `task_4` must return the count of letters and digits in that string.
 
-The `task_4` method should return the sum of all digits (not numbers) from the given string. (real numbers such as 3.14 are shown as 3 digits: 3; 1; 4;)
-For example, for the line `After 2018 I have only 6.5 fingers left` the result should be` 22`
+Example:
+
+```ruby
+task_4("hel2!lo") # --> {letters: 5, digits: 1}
+task_4("wicked .. !") # --> 6 --- {letters: 6, digits: 0}
+```
