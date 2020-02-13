@@ -14,4 +14,6 @@ See [example of how it should look like](example.rb).
 
 When you implement the classes structure, create an `app.rb` file where you will show the interactions between objects like in the example above.
 
+Feel free to experiment!
+
 
