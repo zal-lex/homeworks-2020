@@ -1,0 +1,10 @@
+language: ruby
+
+rvm:
+  - 2.6.5
+cache: bundler
+before_install:
+  - gem update --system
+  - gem install rubocop -v 0.80.1
+script:
+  - rubocop
