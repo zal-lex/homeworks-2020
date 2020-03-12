@@ -9,10 +9,6 @@
 - https://rubymonk.com/
 - https://www.codewars.com/kata/search/ruby?q=&r%5B%5D=-8&xids=completed&beta=false&order_by=total_completed+desc
 
-### Useful articles:
+### Articles and videos
 
-TBD
-
-### Videos to watch:
-
-- https://www.youtube.com/watch?v=SzJ46YA_RaA (To understand where we are)
+See Common section: https://docs.google.com/document/d/1A2YqnNIJmtlvDKdz4B0qPVDHx3d3Zj7PRdqu9edP0Qo/edit#
