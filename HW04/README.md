@@ -13,5 +13,6 @@
 - Write specs for each of your methods usign RSpec.
 
 Notes: implement these methods in your custom module and then include it in the `Array` class.
+Important: Do not use #each, #select, #map in your implementation.
 
 
