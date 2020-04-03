@@ -1,29 +1,41 @@
 module MyModule
   def my_each
-    i = 0
-    while i < @arr.size
-      yield(@arr[i]) if block_given?
-      i += 1
+    if block_given?
+      i = 0
+      while i < @arr.size
+        yield(@arr[i])
+        i += 1
+      end
+    else
+      @arr.to_enum
     end
   end
 
   def my_map
-    tmp = []
-    i = 0
-    while i < @arr.size
-      tmp << yield(@arr[i]) if block_given?
-      i += 1
+    if block_given?
+      tmp = []
+      i = 0
+      while i < @arr.size
+        tmp << yield(@arr[i])
+        i += 1
+      end
+      tmp
+    else
+      @arr.to_enum
     end
-    tmp
   end
 
   def my_select
-    tmp = []
-    i = 0
-    while i < @arr.size
-      tmp << @arr[i] if block_given? && yield(@arr[i])
-      i += 1
+    if block_given?
+      tmp = []
+      i = 0
+      while i < @arr.size
+        tmp << @arr[i]
+        i += 1
+      end
+      tmp
+    else
+      @arr.to_enum
     end
-    tmp
   end
 end
