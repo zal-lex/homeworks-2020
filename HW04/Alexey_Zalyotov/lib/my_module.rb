@@ -30,7 +30,7 @@ module MyModule
       tmp = []
       i = 0
       while i < @arr.size
-        tmp << @arr[i]
+        tmp << @arr[i] if yield(@arr[i])
         i += 1
       end
       tmp
