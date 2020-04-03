@@ -16,11 +16,11 @@ my_arr.my_each do |element|
 end
 puts
 
-puts 'Array with elements selected according to the condition:'
-output = my_arr.my_select { |element| element < 3 }
+puts 'Array with modified elements:'
+output = my_arr.my_map { |element| element * 2 }
 p output
 puts
 
-puts 'Array with modified elements:'
-output = my_arr.my_map { |element| element * 2 }
+puts 'Array with elements selected according to the condition:'
+output = my_arr.my_select { |element| element < 3 }
 p output
