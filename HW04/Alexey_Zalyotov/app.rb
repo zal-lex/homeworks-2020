@@ -1,4 +1,4 @@
-require_relative 'my_module'
+require_relative 'lib/my_module'
 
 class Array
   def initialize(arr)
