@@ -17,12 +17,13 @@ describe '#my_each' do
     end
   end
 
-  # context 'when reciever is array [1, 2, 3]' do
-  #   it 'return modified elements' do
-  #     result = array.my_each { |element| puts element * 2 }
-  #     specify { expect(result).to output("2\n4\n6").to_stdout }
-  #   end
-  # end
+  context 'when reciever is array [1, 2, 3]' do
+    it 'return modified elements in STDOUT' do
+      expect do
+        subject.my_each { |element| puts element * 2 }
+      end.to output("2\n4\n6\n").to_stdout
+    end
+  end
 end
 
 describe '#my_map' do
