@@ -14,10 +14,8 @@ module MyModule
   def my_map
     if block_given?
       tmp = []
-      i = 0
-      while i < @arr.size
-        tmp << yield(@arr[i])
-        i += 1
+      my_each do |element|
+        tmp << yield(element)
       end
       tmp
     else
@@ -28,10 +26,8 @@ module MyModule
   def my_select
     if block_given?
       tmp = []
-      i = 0
-      while i < @arr.size
-        tmp << @arr[i] if yield(@arr[i])
-        i += 1
+      my_each do |element|
+        tmp << element if yield(element)
       end
       tmp
     else
