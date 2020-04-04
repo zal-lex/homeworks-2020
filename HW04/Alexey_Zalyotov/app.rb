@@ -1,10 +1,6 @@
 require_relative 'lib/my_module'
 
 class Array
-  def initialize(arr)
-    @arr = arr
-  end
-
   include MyModule
 end
 
