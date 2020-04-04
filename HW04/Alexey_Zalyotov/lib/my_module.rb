@@ -2,12 +2,12 @@ module MyModule
   def my_each
     if block_given?
       i = 0
-      while i < self.size
+      while i < size
         yield(self[i])
         i += 1
       end
     else
-      self.to_enum
+      clone.to_enum
     end
   end
 
@@ -19,7 +19,7 @@ module MyModule
       end
       tmp
     else
-      self.to_enum
+      clone.to_enum
     end
   end
 
@@ -31,7 +31,7 @@ module MyModule
       end
       tmp
     else
-      self.to_enum
+      clone.to_enum
     end
   end
 end
