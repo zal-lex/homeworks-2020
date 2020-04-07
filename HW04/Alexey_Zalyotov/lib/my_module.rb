@@ -7,7 +7,7 @@ module MyModule
         i += 1
       end
     else
-      clone.to_enum
+      to_enum
     end
   end
 
@@ -19,7 +19,7 @@ module MyModule
       end
       tmp
     else
-      clone.to_enum
+      to_enum
     end
   end
 
@@ -31,7 +31,7 @@ module MyModule
       end
       tmp
     else
-      clone.to_enum
+      to_enum
     end
   end
 end
