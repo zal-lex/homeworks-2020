@@ -14,10 +14,23 @@ describe '#my_each' do
   end
 
   context 'when reciever is array [1, 2, 3]' do
-    it 'return modified elements in STDOUT' do
+    it 'puts elements in STDOUT' do
       expect do
-        subject.my_each { |element| puts element * 2 }
-      end.to output("2\n4\n6\n").to_stdout
+        subject.my_each { |element| puts element }
+      end.to output("1\n2\n3\n").to_stdout
+    end
+
+    it 'return array [1, 2, 3]' do
+      variable = subject.my_each { |element| element }
+      expect(variable).to match_array [1, 2, 3]
+    end
+  end
+
+  context 'when reciever is empty array' do
+    subject { Array.new([]) }
+    it 'return []' do
+      variable = subject.my_each { |element| element }
+      expect(variable).to match_array []
     end
   end
 end
