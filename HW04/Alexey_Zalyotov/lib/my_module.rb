@@ -6,6 +6,7 @@ module MyModule
         yield(self[i])
         i += 1
       end
+      self
     else
       to_enum
     end
