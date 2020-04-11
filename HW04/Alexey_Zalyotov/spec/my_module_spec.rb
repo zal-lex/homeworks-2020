@@ -46,7 +46,7 @@ describe '#my_map' do
   end
 
   context 'when reciever is array [1, 2, 3]' do
-    it 'should return array [2, 4, 6]' do
+    it 'returns array [2, 4, 6]' do
       result = subject.my_map { |element| element * 2 }
       expect(result).to match_array [2, 4, 6]
     end
@@ -62,7 +62,7 @@ describe '#my_select' do
   end
 
   context 'when reciever is array [1, 2, 3]' do
-    it 'should return array [1, 2]' do
+    it 'returns array [1, 2]' do
       result = subject.my_select { |element| element < 3 }
       expect(result).to match_array [1, 2]
     end
