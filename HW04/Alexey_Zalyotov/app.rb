@@ -8,7 +8,7 @@ my_arr = Array.new([1, 2, 3])
 
 puts 'Modified elements, each with a new line:'
 my_arr.my_each do |element|
-  puts element * 2
+  puts element
 end
 puts
 
